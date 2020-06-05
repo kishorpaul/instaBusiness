@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.itravel">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cash02"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".App2.Users.UserUpdateEditedProfileActivity"></activity>
+        <activity android:name=".App2.Users.ForgotPassSuccessActivity" />
+        <activity android:name=".App2.Users.SetNewPassActivity" />
+        <activity android:name=".App2.Users.ResetPassPhOtpActivity" />
+        <activity android:name=".App2.Users.ChooseResetPassActivity" />
+        <activity android:name=".App2.Users.ForgotPasswordActivity" />
+        <activity android:name=".App2.ProductCategory.ProductCategoryActivity" />
+        <activity android:name=".App2.Admin.AdminViewAllProductsActivity" />
+        <activity android:name=".App2.Users.UserSearchActivity" />
+        <activity android:name=".App2.Users.UserOrderActivity" />
+        <activity android:name=".App2.Users.UserConfirmActivity" />
+        <activity android:name=".App2.Users.UserCartActivity" />
+        <activity android:name=".App2.Users.UpdateUserProfileActivity" />
+        <activity android:name=".App2.Users.ProductDetailActivity" />
+        <activity android:name=".App2.Admin.AdminProductEditActivity" />
+        <activity android:name=".App2.Admin.AdminNewOrdersActivity" />
+        <activity android:name=".App2.Admin.AdminAllWishedListActivity" />
+        <activity android:name=".App2.Admin.AdminManageProductsActivity" />
+        <activity android:name=".App2.Admin.AdminCheckAndApproveActivity" />
+        <activity android:name=".App2.Admin.AdminHomeActivity" />
+        <activity android:name=".App2.Admin.AdminLoginActivity" />
+        <activity android:name=".App2.Sellers.SellerAllProductsActivity" />
+        <activity android:name=".App2.Sellers.SellerAddNewProductActivity" />
+        <activity android:name=".App2.Sellers.SellerHomeActivity" />
+        <activity android:name=".App2.LoginSignUp.MerhantVerifyOTPActivity" />
+        <activity android:name=".App2.LoginSignUp.MerchantSignUp3activity" />
+        <activity android:name=".App2.LoginSignUp.MerchSignUp2Activity" />
+        <activity android:name=".App2.Sellers.MerchantSignUpActivity" />
+        <activity android:name=".App2.Sellers.MerchantLoginActivity" />
+        <activity android:name=".App2.LoginSignUp.MerchantStartActivity" />
+        <activity android:name=".App2.Common.AllCategoriesActivity" />
+        <activity android:name=".App2.Common.OnBoardActivity" />
+        <activity android:name=".App2.Common.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".App1.GoogleAuthActivity" />
+        <activity android:name=".App2.Users.UserVerifyPhoneActivity" />
+        <activity android:name=".App2.Users.UserProfileActivity" />
+        <activity android:name=".App2.Users.UserSignUpActivity" />
+        <activity android:name=".App2.Users.UserLoginActivity" />
+        <activity android:name=".App2.Common.DashBoardActivity" />
+        <activity android:name=".App1.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
