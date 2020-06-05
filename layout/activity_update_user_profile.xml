@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    tools:context=".App2.Users.UpdateUserProfileActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/ic_arrow_back_black"
+        android:id="@+id/editProfileClose"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:text="Please Select Profile picture \nand update your Information"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="140dp"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#efefef"
+        android:layout_marginTop="20dp"
+        android:layout_height="140dp"
+        android:src="@drawable/android"
+        android:id="@+id/updateProfile_imageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Select Image"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:id="@+id/updateProfile_userName"
+        android:inputType="text"
+        android:hint="User Name"
+        android:background="@drawable/input_white_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:id="@+id/updateProfile_fullName"
+        android:hint="Full Name"
+        android:background="@drawable/input_white_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:id="@+id/updateProfile_email"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_white_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:id="@+id/updateProfile_password"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@drawable/input_white_bg"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="30dp"
+        android:text="Update"
+        android:textColor="#fff"
+        android:id="@+id/updateBtn"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

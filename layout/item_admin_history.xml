@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#fff"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:id="@+id/rl1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ite_admin_historyId"
+            android:text="Order Id"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ite_admin_historyUserName"
+            android:text="Order Name"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/ite_admin_historyId"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/ite_admin_historyState"
+            android:text="Order State"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/ite_admin_historyUserName"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/ite_admin_historyamount"
+            android:text="Order Amount"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ite_admin_historydate"
+            android:text="Order Date"
+            android:layout_below="@id/ite_admin_historyUserName"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@id/ite_admin_historyState"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="#efefef"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

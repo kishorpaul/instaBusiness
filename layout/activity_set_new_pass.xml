@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".App2.Users.SetNewPassActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/set_password_close"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_black"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="150dp"
+            android:src="@drawable/update"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="44sp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:text="New\nCredentials"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:textAllCaps="false"
+            android:text="New Credentials Detail"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:background="@drawable/input_grey_bg"
+           android:layout_marginTop="40dp"
+           android:id="@+id/newPassword"
+           android:hint="New Password"
+           app:passwordToggleEnabled="true"
+           android:layout_height="wrap_content">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:drawableStart="@drawable/pass"
+               android:drawablePadding="10dp"
+               android:inputType="text"
+               android:layout_height="match_parent"/>
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/input_grey_bg"
+            android:layout_marginTop="8dp"
+            android:hint="Re-enter New Password"
+            android:id="@+id/repeatNewPassword"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/pass"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:layout_marginTop="30dp"
+            android:background="#000"
+            android:id="@+id/passSetBtn"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</ScrollView>

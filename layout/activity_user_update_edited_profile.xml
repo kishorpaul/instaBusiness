@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="15dp"
+    tools:context=".App2.Users.UserUpdateEditedProfileActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_black"
+        android:id="@+id/uuepClose"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:text="Edit Details"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:id="@+id/uuepUname"
+        android:inputType="text"
+        android:drawablePadding="10dp"
+        android:hint="User Name"
+        android:drawableStart="@drawable/person"
+        android:background="@drawable/input_grey_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:padding="8dp"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:id="@+id/uuepfName"
+        android:hint="Full Name"
+        android:drawableStart="@drawable/person"
+        android:background="@drawable/input_grey_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="10dp"
+        android:layout_height="40dp"
+        android:id="@+id/uuepEmail"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_grey_bg"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_marginTop="30dp"
+        android:text="Update"
+        android:textColor="#fff"
+        android:id="@+id/uuepBtn"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

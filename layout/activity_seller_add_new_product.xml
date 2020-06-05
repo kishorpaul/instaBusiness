@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".App2.Sellers.SellerAddNewProductActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="40dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/addProductBack"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black"/>
+
+                <TextView
+                    android:id="@+id/addName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="Add new Product"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@id/appBar">
+
+        <ImageView
+            android:id="@+id/addProductImage"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android"
+            android:layout_height="250dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Product Name"
+            android:id="@+id/addProductName"
+            android:padding="8dp"
+            android:background="@drawable/input_bg"
+            android:layout_below="@id/addProductImage"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Product Description"
+            android:background="@drawable/input_bg"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/addProductDesc"
+            android:layout_below="@id/addProductName"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Product Price in rupees"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:background="@drawable/input_bg"
+            android:id="@+id/addProductPrice"
+            android:layout_below="@id/addProductDesc"
+            android:inputType="number"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addProductPrice"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg"
+            android:text="Add Product"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/addProductBtn"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:layout_height="140dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@drawable/card2"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/cat_image"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/android" />
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cat_image"
+            android:text="McDonalds"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/cat_name"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/cat_name"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@id/cat_image"
+            android:layout_alignParentStart="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/cat_price"
+            android:hint="Price"
+            android:layout_gravity="center_horizontal" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/cat_price"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/cat_image"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/cat_desc"
+                android:textColor="#fff"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/cat_image"
+                android:layout_height="wrap_content"
+                android:text="This place has the city's favorite serving and Ambience"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textAlignment="viewStart"/>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".App2.ProductCategory.ProductCategoryActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_black"
+        android:id="@+id/cat_product_close"/>
+
+       <TextView
+           android:fontFamily="sans-serif-black"
+           android:textSize="22sp"
+           android:elevation="1dp"
+           android:background="@drawable/cat_header_bg"
+           android:layout_marginTop="10dp"
+           android:includeFontPadding="true"
+           android:layout_gravity="center_horizontal"
+           android:id="@+id/cat_product_catName"
+           android:padding="10dp"
+           android:textColor="#000"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Discover by Shoes"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="6dp"
+        android:background="#efefef"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:id="@+id/cat_product_recycler"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"/>
+</LinearLayout>

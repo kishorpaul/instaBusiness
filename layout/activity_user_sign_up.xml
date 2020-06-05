@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".App2.Users.UserSignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:transitionName="logoImage"
+            android:src="@drawable/android"
+            android:id="@+id/reg_image"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/reg_name"
+            android:layout_width="wrap_content"
+            android:transitionName="logoText"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Welcome"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/reg_title"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:transitionName="logoT2"
+            android:text="Let's get it STARTED!"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reg_fullName"
+                android:theme="@style/TextLabel"
+                android:hint="Full Name"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reg_userName"
+                android:theme="@style/TextLabel"
+                android:hint="User Name"
+                app:counterMaxLength="15"
+                android:transitionName="logoe1"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reg_email"
+                android:theme="@style/TextLabel"
+                android:hint="Email Address"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reg_phone"
+                android:theme="@style/TextLabel"
+                app:counterMaxLength="10"
+                android:hint="10 digit Phone Number"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/reg_password"
+                android:theme="@style/TextLabel"
+                android:hint="Password"
+                app:passwordToggleEnabled="true"
+                android:transitionName="logoe2"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/reg_btn"
+                android:text="Go"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="right"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:transitionName="logob1"
+                android:drawableEnd="@drawable/right_arrow_white"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/already_user_btn"
+                android:text="Already a User?"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:transitionName="logob2"
+                android:drawableEnd="@drawable/right_arrow_white"
+                android:layout_height="wrap_content"
+                android:background="#00000000"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_height="220dp">
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        app:civ_border_width="2dp"-->
+<!--        app:civ_border_color="#efefef"-->
+<!--        android:src="@drawable/person"-->
+<!--        android:id="@+id/nav_profileImage"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="6dp"-->
+<!--        android:layout_toRightOf="@+id/nav_profileImage"-->
+<!--        android:text="User Name"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:id="@+id/nav_profileUsername"-->
+<!--        android:fontFamily="sans-serif-black"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="6dp"-->
+<!--        android:layout_toRightOf="@+id/nav_profileImage"-->
+<!--        android:text="Hello, Sigin In"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:id="@+id/nav_profilesignInIfNot"-->
+<!--        android:fontFamily="sans-serif-black"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:text="Insta Business"
+        android:layout_marginRight="15dp"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/nav_header_image"
+        android:id="@+id/nav_profileFullName"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="350dp"
+        android:id="@+id/nav_header_image"
+        android:src="@drawable/cash02"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="-60dp"/>
+
+</RelativeLayout>

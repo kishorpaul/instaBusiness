@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:maxWidth="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#fff"
+    android:layout_margin="4dp"
+    android:padding="10dp"
+    android:elevation="8dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:id="@+id/item_product_cat_pImage"
+            android:src="@drawable/shoess"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/item_product_cat_pName"
+            android:layout_marginTop="8dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="#2486DF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/item_product_cat_pPrice"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Price"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="#efefef"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/eye"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="View Deatail"
+            android:textColor="#2486DF"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
