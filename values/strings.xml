@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">InstaBusiness</string>
+
+    <string name="first_sTitle">Start Business from here</string>
+    <string name="second_sTitle">Receive or Get Visited</string>
+    <string name="third_sTitle">Interact Close</string>
+    <string name="fourth_sTitle">Happy Trading</string>
+
+    <string name="first_desc">Add your product live</string>
+    <string name="second_desc">Customer Merchant RelationShip</string>
+    <string name="third_desc">Customer and Merchant Direct Interaction</string>
+    <string name="fourth_desc">Make the customer most happier</string>
+
+    <string name="ship_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets get Started</string>
+
+</resources>

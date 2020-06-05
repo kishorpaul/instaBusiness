@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fece2f"
+    android:textAlignment="center"
+    tools:context=".App1.MainActivity">
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="10dp"
+        android:transitionName="logoImage"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_t1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Rock N Roll"
+        android:transitionName="logoText"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_image" />
+
+    <TextView
+        android:id="@+id/welcome_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alegreya_sans_sc_italic"
+        android:text="Rady to Roll"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_t1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

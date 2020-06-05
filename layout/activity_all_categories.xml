@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".App2.Common.AllCategoriesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/cat_back"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search_black"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="32sp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/mobileRl"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="Mobiles"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:text="Extend All"
+                    android:background="#00000000"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/phone"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/watchRl"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Watches"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:text="Extend All"
+                    android:background="#00000000"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/watches"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/shoeRl"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="Shoes"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:text="Extend All"
+                    android:background="#00000000"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/shoess"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/glassRl"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="Glasses"
+                    android:textSize="22sp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:text="Extend All"
+                    android:background="#00000000"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/glasses"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/laptopRl"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Laptops"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Extend All"
+                    android:background="#00000000"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/shoess"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/shirtRl"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/card2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:text="Shirts"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:text="Extend All"
+                    android:background="#00000000"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/glasses"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

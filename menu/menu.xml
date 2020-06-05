@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search by Category"
+            android:icon="@drawable/search_black"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:title="Cart"
+            android:icon="@drawable/cart"/>
+        <item
+            android:id="@+id/nav_Orders"
+            android:title="Orders"
+            android:icon="@drawable/orders"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/person"/>
+    </group>
+
+    <item android:title="Category">
+        <menu>
+                <item
+                    android:id="@+id/nav_mobile"
+                    android:title="Mobiles"
+                    android:icon="@drawable/android"/>
+                <item
+                    android:id="@+id/nav_shoe"
+                    android:title="Shoes"
+                    android:icon="@drawable/android"/>
+                <item
+                    android:id="@+id/nav_watches"
+                    android:title="Watches"
+                    android:icon="@drawable/android"/>
+                <item
+                    android:id="@+id/nav_glasses"
+                    android:title="Glasses"
+                    android:icon="@drawable/android"/>
+                <item
+                    android:id="@+id/nav_hats"
+                    android:title="Hats"
+                    android:icon="@drawable/android"/>
+        </menu>
+    </item>
+</menu>

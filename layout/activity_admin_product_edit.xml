@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".App2.Admin.AdminProductEditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="40dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:id="@+id/admin_editProduct_Back"
+                    android:layout_centerInParent="true"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_arrow_back_black"/>
+
+                <TextView
+                    android:id="@+id/admin_manage_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Edit Product"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/appBar"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/admin_editProduct_Image"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"/>
+
+        <EditText
+            android:hint="Product Name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@drawable/input_bg"
+            android:id="@+id/admin_editProduct_name"
+            android:layout_below="@id/admin_editProduct_Image"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:hint="Product Price"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:id="@+id/admin_editProduct_price"
+            android:layout_below="@id/admin_editProduct_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_bg"/>
+
+        <EditText
+            android:hint="Product Description"
+            android:inputType="text"
+            android:id="@+id/admin_editProduct_desc"
+            android:layout_below="@id/admin_editProduct_price"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input_bg"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_editProduct_ApplyBtn"
+            android:text="Apply Changes"
+            android:layout_below="@id/admin_editProduct_desc"
+            android:background="@drawable/button_bg"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:id="@+id/admin_editProduct_progressBar"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/admin_editProduct_deleteBtn"
+            android:text="Delete Product"
+            android:background="@drawable/button_bg"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
